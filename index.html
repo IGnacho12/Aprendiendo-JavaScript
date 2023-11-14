@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Objetivo: Lograr todos los puntos de PseInt en JavaScript</h1>
+
+    <h2>
+      LISTA DE CONSIGNAS
+    </h2>
+
+    <ul>
+      <li>Ingresar 3 números y mostrarlos.</li>
+      <li>Escribir el algoritmo necesario para calcular la suma de dos números. Mostrar el resultado.</li>
+      <li>Escribir en Pseudocódigo un algoritmo que realice las siguientes acciones:
+        <br> a. Ingresar valores para 2 variables (NUMERO1 y NUMERO2).
+        <br> b. Efectuar el producto de dichas variables.
+        <br> c. Mostrar el resultado por pantalla.
+        <br> d. Obtener el cuadrado de NUMERO1 y mostrarlo por pantalla.
+      </li>
+      <li>Diseñar un algoritmo que calcule la longitud de la circunferencia y el área del círculo dado su radio.</li>
+      <li>De un alumno del curso de ingreso a la Facultad, se ingresan las notas obtenidas en los exámenes de las 5
+        materias que lo forman. Calcular el promedio del alumno y mostrarlo por pantalla.</li>
+      <li>Calcular el número de pulsaciones que una persona debe tener por cada 10 segundos de ejercicio, si la fórmula
+        es: num pulsaciones = (220 - edad) / 10. Para realizar el algoritmo, se deberá informar la edad de la persona y,
+        luego de aplicar la fórmula correspondiente, mostrar el resultado.</li>
+      <li>
+        En un hospital existen tres áreas: Cardiología, Pediatría y Traumatología. El presupuesto anual del hospital se
+        reparte conforme a la siguiente tabla:
+        <br> a. Cardiología: 40%
+        <br> b. Traumatología: 30%
+        <br> c. Pediatría: 30%
+        <br> Obtener la cantidad de dinero que recibirá cada área, para cualquier monto presupuestal.
+      </li>
+    </ul>
+
+    <section class="desarrollo">
+      <div class="punto1">
+        <h1>Punto 1</h1>
+        <p>Ingrese 3 numeros.</p>
+        <div class="mono">
+          <input type="number" placeholder="numero 1" id="P1num1">
+          <input type="number" placeholder="numero 2" id="P1num2">
+          <input type="number" placeholder="numero 3" id="P1num3">
+          <button id="btnPunto1">Ejecutar Punto 1</button>
+        </div>
+
+        <h2>Resultado</h2>
+
+        <p class="resultado" id="resultado_1"></p>
+      </div>
+
+      <div class="punto2">
+        <h1>Punto 2</h1>
+
+        <p>Ingrese 2 numeros.</p>
+
+        <div class="mono">
+          <input type="number" placeholder="numero 1" id="P2num1">
+          <input type="number" placeholder="numero 2" id="P2num2">
+          <button id="btnPunto2">Ejecutar Punto 2</button>
+        </div>
+
+        <h2>Resultado</h2>
+
+        <p class="resultado" id="resultado_2""></p>
+            </div>
+
+            <div class=" punto3">
+        <h1>Punto 3</h1>
+        <p>Ingrese 2 numeros.</p>
+        <div class="mono">
+          <input type="number" placeholder="numero 1" id="P3num1">
+          <input type="number" placeholder="numero 2" id="P3num2">
+          <button id="btnPunto3">Ejecutar Punto 3</button>
+        </div>
+
+        <h2>Resultado</h2>
+
+        <p class="resultado" id="resultado_3"></p>
+        <p class="resultado" id="resultado_3_b"></p>
+      </div>
+
+      <div class="punto4">
+        <h1>Punto 4</h1>
+        <p>Ingrese el radio.</p>
+
+        <div class="mono">
+          <input type="text" placeholder="radio" id="P4radio">
+
+          <button id="btnPunto4">Ejecutar Punto 4</button>
+        </div>
+
+        <p class="resultado" id="resultado_4"></p>
+        <p class="resultado" id="resultado_4_b"></p>
+      </div>
+
+      <div class="punto5">
+        <h1>Punto 5</h1>
+
+        <p>Ingrese la cantidad de examenes que rindo, posteriormente ingrese la nota de cada uno de sus examenes en el
+          cuadro correspondiente.</p>
+        <div class="mono">
+          <input type="number" placeholder="cantidad de examenes" id="P5CantidadDeExamenes">
+          <ul class="P5_ul"></ul>
+          <button id="btnPunto5">Ejecutar Punto 5</button>
+        </div>
+
+        <p class="resultado" id="resultado_5"></p>
+      </div>
+
+      <div class="punto6">
+        <h1>Punto 6</h1>
+
+        <p>Ingrese su edad.</p>
+
+        <div class="mono">
+          <input type="number" id="P6edad">
+          <button id="btnPunto6">Ejecutar Punto 6</button>
+        </div>
+        <p class="resultado" id="resultado_6"></p>
+      </div>
+
+      <div class="punto7">
+        <h1>Punto 7</h1>
+
+        <p>Ingrese el monto presupuestal.</p>
+
+        <div class="mono">
+          <input type="number" id="P7Presupuesto">
+          <button id="btnPunto7">Ejecutar Punto 7</button>
+        </div>
+
+        <div id="punto7resultado">
+          <p class="resultado" id="resultado_7"></p>
+        </div>
+
+      </div>
+
+
+
+    </section>
+  </main>
+  <div style="height: 200vh;"></div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

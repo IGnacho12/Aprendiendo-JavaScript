@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"); /* Fuente */
+/* Estilos generales */
+:root {
+  --primary-color: #100d1a;
+  --secundary-color: #28b2e3;
+  --tertiary-color: #e737a2;
+  --quartenary-color: #28b2e3;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
+
+h1 {
+  color: var(--secundary-color);
+  font-size: 50px;
+}
+
+/* --- --- --- --- Main --- --- --- --- */
+main {
+  margin: 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+main h2 {
+  color: var(--tertiary-color);
+  font-size: 40px;
+  font-style: italic;
+}
+
+main ul {
+  font-size: 20px;
+}
+
+main ul li {
+  margin: 13px 0;
+}
+
+strong {
+  color: var(--tertiary-color);
+}
+
+/* --- --- --- --- Estilos del desarrollo de las consigas --- --- --- --- */
+
+.desarrollo .mono {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.desarrollo input {
+  padding: 15px;
+  font-size: 25px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: rgb(240, 240, 240);
+}
+
+.desarrollo input::placeholder {
+  color: rgba(128, 128, 128, 0.397);
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.desarrollo button {
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient(150deg, blue, purple);
+  cursor: pointer;
+  font-size: 1;
+  transition: 0.1s;
+}
+
+.desarrollo button:active {
+  transform: scale(0.9);
+}
+
+.desarrollo h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.resultado {
+  font-size: 30px;
+}
+
+.desarrollo p {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* --- --- --- --- Estilos independientes para cada punto --- --- --- ---  */
+
+#punto7resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.punto7 .resultado {
+  display: block;
+}
+
