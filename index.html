@@ -1,158 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
 
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
-  <main>
-    <h1>Objetivo: Lograr todos los puntos de PseInt en JavaScript</h1>
+  <body>
+    <img src="/assets/html.svg" alt id="img1">
+    <img src="/assets/css.svg" alt id="img2">
+    <img src="/assets/js.svg" alt id="img3">
 
-    <h2>
-      LISTA DE CONSIGNAS
-    </h2>
 
-    <ul>
-      <li>Ingresar 3 números y mostrarlos.</li>
-      <li>Escribir el algoritmo necesario para calcular la suma de dos números. Mostrar el resultado.</li>
-      <li>Escribir en Pseudocódigo un algoritmo que realice las siguientes acciones:
-        <br> a. Ingresar valores para 2 variables (NUMERO1 y NUMERO2).
-        <br> b. Efectuar el producto de dichas variables.
-        <br> c. Mostrar el resultado por pantalla.
-        <br> d. Obtener el cuadrado de NUMERO1 y mostrarlo por pantalla.
-      </li>
-      <li>Diseñar un algoritmo que calcule la longitud de la circunferencia y el área del círculo dado su radio.</li>
-      <li>De un alumno del curso de ingreso a la Facultad, se ingresan las notas obtenidas en los exámenes de las 5
-        materias que lo forman. Calcular el promedio del alumno y mostrarlo por pantalla.</li>
-      <li>Calcular el número de pulsaciones que una persona debe tener por cada 10 segundos de ejercicio, si la fórmula
-        es: num pulsaciones = (220 - edad) / 10. Para realizar el algoritmo, se deberá informar la edad de la persona y,
-        luego de aplicar la fórmula correspondiente, mostrar el resultado.</li>
-      <li>
-        En un hospital existen tres áreas: Cardiología, Pediatría y Traumatología. El presupuesto anual del hospital se
-        reparte conforme a la siguiente tabla:
-        <br> a. Cardiología: 40%
-        <br> b. Traumatología: 30%
-        <br> c. Pediatría: 30%
-        <br> Obtener la cantidad de dinero que recibirá cada área, para cualquier monto presupuestal.
-      </li>
-    </ul>
+    <div class="container-aside">
+      <h3>Lista de consignas</h3>
+      <aside>
+          <ul>
+            <li><input type="checkbox" class="checkbox"><label >Punto 1</label></li>
+            <li><input type="checkbox" class="checkbox"><label >Punto 2</label></li>
+            <li><input type="checkbox" class="checkbox"><label >Punto 3</label></li>
+            <li><input type="checkbox" class="checkbox"><label >Punto 4</label></li>
+            <li><input type="checkbox" class="checkbox"><label >Punto 4</label></li>
+            <li><input type="checkbox" class="checkbox"><label >Punto 4</label></li>
+            <li><input type="checkbox" class="checkbox"><label >Punto 4</label></li>
+            <li><input type="checkbox" class="checkbox"><label >Punto 4</label></li>
+            <li><input type="checkbox" class="checkbox"><label >Punto 4</label></li>
+            <li><input type="checkbox" class="checkbox"><label >Punto 4</label></li>
+            <li><input type="checkbox" class="checkbox"><label >Punto 4</label></li>
+            <li><input type="checkbox" class="checkbox"><label >Punto 4</label></li>
+            <li><input type="checkbox" class="checkbox"><label >Punto 4</label></li>
+            <li><input type="checkbox" class="checkbox"><label >Punto 4</label></li>
+          </ul>
+      </aside>
+    </div>
+    <main>
+      <h1>Objetivo: Lograr todos los puntos de PseInt en JavaScript</h1>
 
-    <section class="desarrollo">
-      <div class="punto1">
-        <h1>Punto 1</h1>
-        <p>Ingrese 3 numeros.</p>
-        <div class="mono">
-          <input type="number" placeholder="numero 1" id="P1num1">
-          <input type="number" placeholder="numero 2" id="P1num2">
-          <input type="number" placeholder="numero 3" id="P1num3">
-          <button id="btnPunto1">Ejecutar Punto 1</button>
+      <h2>LISTA DE CONSIGNAS</h2>
+
+      <button id="btnMostrarConsignas">Ocultar lista de consignas</button>
+
+      <!-- Lista de consignas -->
+      <ol class="show" id="listaDeConsignas">
+        <li>Ingresar 3 números y mostrarlos.</li>
+        <li>Escribir el algoritmo necesario para calcular la suma de dos
+          números. Mostrar el resultado.</li>
+        <li>Escribir en Pseudocódigo un algoritmo que realice las siguientes
+          acciones:
+          <br> a. Ingrese valores para 2 variables NUMERO1 Y NUMERO2
+          <br> b. Efectúe el producto de dichas variables.
+          <br> c. Muestre el resultado por pantalla.
+          <br> d. Obtenga el cuadrado de NUMERO1 y los muestre por pantalla</li>
+        <li>Diseñar un algoritmo que calcule la longitud de la circunferencia
+          y
+          el área del círculo mediante el radio dado.</li>
+        <li>De un alumno del curso de ingreso a la Facultad, se ingresan las
+          notas obtenidas en los exámenes de las 3 materias que lo forman.
+          Calcular el promedio del alumno y mostrarlo por pantalla.</li>
+        <li>Calcular el número de pulsaciones que una persona debe tener por
+          cada 1 segundo de ejercicio, si la fórmula es: numPulsaciones = (220
+          .
+          edad)/ 10. Para realizar el algoritmo se deberá informar la edad de
+          la
+          persona y luego aplicarla a la fórmula correspondiente y mostrar su
+          resultado.</li>
+        <li>En un hospital existen tres áreas: Cardiología, Pediatría y
+          Traumatología. El presupuesto anual del hospital se reparte conforme
+          a
+          la siguiente tabla:
+          <br> a. Cardiología: 40%
+          <br> b. Traumatología: 30%
+          <br> c. Pediatría: 30%
+          Obtener la cantidad de dinero que recibirá cada área, para cualquier
+          monto presupuestal.</li>
+        <li>Diseñar el algoritmo necesario para que, habiéndose leído el valor
+          de 2 variables (NUMERO1 y NUMERO2), se intercambien los valores de
+          las
+          variables, es decir, que el valor que tenía NUMERO1 ahora lo
+          contenga
+          NUMERO2 y viceversa.</li>
+        <li>Ingresar 2 números y mostrar al mayor de los 2.</li>
+        <li>Se leen tres números A, B y C. Se pide escribir el mayor de ellos.</li>
+        <li>Se deben ingresar 3 números enteros, sumarlos y controlar si el
+          resultado es mayor a 1200. Mostrar el mensaje por si es mayor o si
+          es
+          menor.</li>
+        <li>Los operarios de una empresa trabajan en dos turnos, uno diurno,
+          cuyo código es menor que 10 y otro nocturno de código mayor o igual
+          a
+          10. Indicar qué turno le corresponde a cada trabajador cuando
+          ingresan
+          su código.</li>
+        <li>Se desea calcular el jornal para un operario sabiendo que, para el
+          turno nocturno es de $2.000 la hora y para el turno diurno es de
+          $1.000 la hora, pero en este último caso, si el día es domingo, se
+          paga un adicional de $1000 la hora.</li>
+        <li>Se leen tres datos que representan el nombre, sueldo básico y
+          antigüedad de un empleado y se solicita imprimir el nombre y el
+          sueldo
+          a cobrar. Este sueldo a cobrar se calcula adicionando al básico el
+          35%
+          del mismo, si la antigüedad supera los 10 años.</li>
+        <li>Calcular el total que una persona debe pagar por la compra de
+          llantas para autos, si el precio de cada llanta es de $8.000 si se
+          compran menos de 5 llantas y de $7.000 si se compran 5 o más.</li>
+        <li>En una fábrica de computadoras se plantea ofrecer a los clientes
+          un
+          descuento que dependerá del número de computadoras que compre. Si
+          las
+          computadoras son menos de 5 se les dará un 10% de descuento sobre el
+          total de la compra; si el número de computadoras es mayor o igual a
+          5
+          pero menos de 10 se le otorga un 20% de descuento; y si son 10 o más
+          se les da un 30% de descuento (el precio de cada computadora es de
+          $110.000).</li>
+        <li>Pedir al operador que ingrese 5 números y mostrar por pantalla el
+          mayor.</li>
+        <li>Pedir al operador que ingrese 10 números enteros positivos y
+          mostrar
+          por pantalla la suma de los mismos.</li>
+        <li>Pedir al operador que ingrese 15 números enteros positivos y
+          mostrar
+          por pantalla el promedio de los mismos.</li>
+        <li>Pedir al operador que ingrese un número entero positivo mayor a
+          10.
+          Determinar si es par o impar y mostrar por pantalla el resultado
+          (Par
+          o Impar).</li>
+        <li>Pedir al operador que ingrese 20 números enteros mayores a 1000 y
+          mostrar por pantalla la cantidad de números pares y la cantidad de
+          números impares.</li>
+        <li>Pedir al operador que ingrese 20 números enteros mayores a 15,
+          mostrar por pantalla la suma, el promedio, la cantidad de números
+          pares y la cantidad de números impares ingresados.</li>
+        <li>Pedir al operador que ingrese 30 números enteros mayores a 12.
+          Mostrar por pantalla el mayor de los números pares y el número de
+          orden de ingreso.</li>
+        <li>Pedir al operador que ingrese 45 números enteros mayores a 15 y
+          que
+          sean pares. Mostrar por pantalla la suma, el promedio, el menor
+          número
+          ingresado, el número de orden y el mayor número ingresado, con su
+          número de orden de ingreso.</li>
+        <li>Pedir al operador que ingrese 2 números enteros positivos
+          distintos
+          entre sí. Determinar cuál es el mayor y menor, dividir al mayor
+          dividido por el menor, sin usar división. Mostrar por pantalla el
+          dividendo, el divisor, el cociente y el resto.</li>
+        <li>Pedir al operador que ingrese 20 números enteros distintos de 0,
+          mayores a 100 y menores a 300. El programa debe terminar con la
+          palabra Final. Mostrar por pantalla al final del programa los
+          números
+          que fueron ingresados y la cantidad de números, la suma y el
+          promedio.</li>
+        <li>Ingresar una serie de números enteros debiéndose averiguar la
+          cantidad de enteros positivos y la cantidad de negativos. Realizar
+          la
+          sumatoria, si el resultado es positivo, mostrar la cantidad de
+          números
+          positivos y si es negativo, mostrar el resultado de la suma.</li>
+        <li>Ingresar 12 números y mostrarlos en forma de lista al final del
+          programa.</li>
+        <li>Ingresar 20 números, sumarlos, mostrar al final del programa a los
+          números ingresados en forma de lista y al resultado de la suma.</li>
+        <li>Ingresar 15 números, averiguar al mayor y al menor, mostrar a
+          todos
+          los ingresados en forma de lista y al mayor y al menor.</li>
+        <li>Hacer un programa para ingresar tu nombre y apellido y mostrarlos.</li>
+        <li>Hacer un programa para ingresar tu nombre, carrera que cursas y
+          edad. Mostrar todos los datos.</li>
+        <li>Crear tres vectores, dos de 10 elementos numéricos y uno de 20.
+          Cargar los dos vectores de 10 elementos y juntarlos en el de 20.
+          Primero uno y después el otro.</li>
+        <li>Del registro de partes meteorológicos por cada día se registra la
+          fecha, temperatura máxima y temperatura mínima. Diseñar en
+          Pseudocódigo un algoritmo que permita informar:
+          <br> a. el día más frío y cuál fue esa temperatura
+          <br> b. el día más cálido y cuál fue esa temperatura</li>
+        <li>Por teclado se ingresa el valor hora de N cantidad de empleados.
+          Posteriormente se ingresa el nombre del empleado, la antigüedad y la
+          cantidad de horas trabajadas en el mes. Se pide calcular el importe
+          a
+          cobrar teniendo en cuenta que al total que resulta de multiplicar el
+          valor hora por la cantidad de horas trabajadas, hay que sumarle la
+          cantidad de años trabajados multiplicados por $3000, y al total de
+          todas esas operaciones restarle el 13% en concepto de descuentos.
+          Imprimir el recibo correspondiente con el nombre, la antigüedad, el
+          valor hora, el total a cobrar en bruto, el total de descuentos y el
+          valor neto a cobrar.</li>
+        <li>Un profesor de matemáticas de un establecimiento educativo
+          registra
+          de cada alumno Nº de legajo, nombre y promedio. Según el promedio
+          desea saber cuántos alumnos aprobaron (promedio mayor o igual a 7),
+          cuántos rinden en diciembre (promedio menor a 7 y mayor o igual a 4)
+          y
+          cuántos rinden examen en marzo (promedio menor a 4). Además, desea
+          conocer el N° de legajo y nombre de los alumnos con el mejor
+          promedio.</li>
+        <li>Crear un programa con un menú de opciones.
+          <br> 1. Permitir cargar en los legajos, nombres de 40 alumnos de un
+          curso y las notas de programación de cada uno de ellos.
+          <br> 2. Mostrar la mayor nota y a qué alumnos le correspondió esta
+          nota.
+          <br> 3. Mostrar el listado de los datos ingresados.
+          <br> 4. Permitir salir del programa.</li>
+        <li>Hacer un programa que mediante un menú de opciones nos permita
+          realizar las siguientes acciones:
+          <br> 1. Ingresar los nombres y las notas de 50 alumnos, debiéndose
+          controlar que la nota sea positiva y menor o igual a 10.
+          <br> 2. Averiguar la nota mayor y la menor.
+          <br> 3. Hacer dos listados, el primero con todos los alumnos que
+          tengan la mayor nota, y el segundo con todos los alumnos que tengan
+          la
+          menor nota.
+          <br> 4. Salir del programa.</li>
+        <li>Hacer un programa que por medio de un menú de opciones nos permita
+          realizar las siguientes acciones:
+          <br> a. Ingresar el nombre y el precio unitario de 100 artículos. El
+          precio unitario debe ser mayor que 0 (cero).
+          <br> b. Calcular la ganancia del 25% para cada artículo y mostrar
+          los
+          datos para de cada uno.
+          <br> c. Indicar cuántos artículos tienen la menor ganancia.
+          <br> d. Hacer un listado ordenado por el nombre en forma ascendente
+          de
+          todos los artículos que superen el promedio de la ganancia. Debe
+          aparecer el orden de ingreso.
+          <br> e. Salir del programa.</li>
+      </ol>
+
+      <section class="desarrollo">
+        <div class="punto1">
+          <h1>Punto 1</h1>
+          <p>Ingrese 3 numeros.</p>
+          <div class="mono">
+            <input type="number" placeholder="numero 1" id="P1num1">
+            <input type="number" placeholder="numero 2" id="P1num2">
+            <input type="number" placeholder="numero 3" id="P1num3">
+            <button id="btnPunto1">Ejecutar Punto 1</button>
+          </div>
+
+          <h2>Resultado</h2>
+
+          <p class="resultado" id="resultado_1"></p>
         </div>
 
-        <h2>Resultado</h2>
+        <div class="punto2">
+          <h1>Punto 2</h1>
 
-        <p class="resultado" id="resultado_1"></p>
-      </div>
+          <p>Ingrese 2 numeros.</p>
 
-      <div class="punto2">
-        <h1>Punto 2</h1>
+          <div class="mono">
+            <input type="number" placeholder="numero 1" id="P2num1">
+            <input type="number" placeholder="numero 2" id="P2num2">
+            <button id="btnPunto2">Ejecutar Punto 2</button>
+          </div>
 
-        <p>Ingrese 2 numeros.</p>
+          <h2>Resultado</h2>
 
-        <div class="mono">
-          <input type="number" placeholder="numero 1" id="P2num1">
-          <input type="number" placeholder="numero 2" id="P2num2">
-          <button id="btnPunto2">Ejecutar Punto 2</button>
+          <p class="resultado" id="resultado_2""></p>
         </div>
 
-        <h2>Resultado</h2>
+        <div class=" punto3">
+          <h1>Punto 3</h1>
+          <p>Ingrese 2 numeros.</p>
+          <div class="mono">
+            <input type="number" placeholder="numero 1" id="P3num1">
+            <input type="number" placeholder="numero 2" id="P3num2">
+            <button id="btnPunto3">Ejecutar Punto 3</button>
+          </div>
 
-        <p class="resultado" id="resultado_2""></p>
+          <h2>Resultado</h2>
+
+          <p class="resultado" id="resultado_3"></p>
+          <p class="resultado" id="resultado_3_b"></p>
+        </div>
+
+        <div class="punto4">
+          <h1>Punto 4</h1>
+          <p>Ingrese el radio.</p>
+
+          <div class="mono">
+            <input type="number" placeholder="radio" id="P4radio">
+
+            <button id="btnPunto4">Ejecutar Punto 4</button>
+          </div>
+
+          <p class="resultado" id="resultado_4"></p>
+          <p class="resultado" id="resultado_4_b"></p>
+        </div>
+
+        <div class="punto5">
+          <h1>Punto 5</h1>
+
+          <p>Ingrese la cantidad de examenes que rindo, posteriormente ingrese
+            la nota de cada uno de sus examenes en el
+            cuadro correspondiente.</p>
+          <div class="mono">
+            <input type="number" placeholder="cantidad de examenes"
+              id="P5CantidadDeExamenes">
+            <ul class="P5_ul"></ul>
+            <button id="btnPunto5">Ejecutar Punto 5</button>
+          </div>
+
+          <p class="resultado" id="resultado_5"></p>
+        </div>
+
+        <div class="punto6">
+          <h1>Punto 6</h1>
+
+          <p>Ingrese su edad.</p>
+
+          <div class="mono">
+            <input type="number" id="P6edad">
+            <button id="btnPunto6">Ejecutar Punto 6</button>
+          </div>
+          <p class="resultado" id="resultado_6"></p>
+        </div>
+
+        <div class="punto7">
+          <h1>Punto 7</h1>
+
+          <p>Ingrese el monto presupuestal.</p>
+
+          <div class="mono">
+            <input type="number" id="P7Presupuesto">
+            <button id="btnPunto7">Ejecutar Punto 7</button>
+          </div>
+
+          <div id="punto7resultado">
+            <p class="resultado" id="resultado_7"></p>
+          </div>
+
+          <div class="punto8">
+            <h1>Punto 8</h1>
+
+            <p>Ingrese el valor para 2 variables y su valor se intercambiara</p>
+
+            <div class="mono">
+              <input type="number" placeholder="variable 1" id="P8num1">
+              <input type="number" placeholder="variable 2" id="P8num2">
+              <button id="btnPunto8">Ejecutar Punto 8</button>
             </div>
 
-            <div class=" punto3">
-        <h1>Punto 3</h1>
-        <p>Ingrese 2 numeros.</p>
-        <div class="mono">
-          <input type="number" placeholder="numero 1" id="P3num1">
-          <input type="number" placeholder="numero 2" id="P3num2">
-          <button id="btnPunto3">Ejecutar Punto 3</button>
+            <p class="resultado" id="resultado_8"></p>
+            <!-- <img src="/assets/html.svg" alt="asdf"> -->
+          </div>
+
         </div>
 
-        <h2>Resultado</h2>
+      </section>
+    </main>
+    <div style="height: 200vh;"></div>
 
-        <p class="resultado" id="resultado_3"></p>
-        <p class="resultado" id="resultado_3_b"></p>
-      </div>
-
-      <div class="punto4">
-        <h1>Punto 4</h1>
-        <p>Ingrese el radio.</p>
-
-        <div class="mono">
-          <input type="text" placeholder="radio" id="P4radio">
-
-          <button id="btnPunto4">Ejecutar Punto 4</button>
-        </div>
-
-        <p class="resultado" id="resultado_4"></p>
-        <p class="resultado" id="resultado_4_b"></p>
-      </div>
-
-      <div class="punto5">
-        <h1>Punto 5</h1>
-
-        <p>Ingrese la cantidad de examenes que rindo, posteriormente ingrese la nota de cada uno de sus examenes en el
-          cuadro correspondiente.</p>
-        <div class="mono">
-          <input type="number" placeholder="cantidad de examenes" id="P5CantidadDeExamenes">
-          <ul class="P5_ul"></ul>
-          <button id="btnPunto5">Ejecutar Punto 5</button>
-        </div>
-
-        <p class="resultado" id="resultado_5"></p>
-      </div>
-
-      <div class="punto6">
-        <h1>Punto 6</h1>
-
-        <p>Ingrese su edad.</p>
-
-        <div class="mono">
-          <input type="number" id="P6edad">
-          <button id="btnPunto6">Ejecutar Punto 6</button>
-        </div>
-        <p class="resultado" id="resultado_6"></p>
-      </div>
-
-      <div class="punto7">
-        <h1>Punto 7</h1>
-
-        <p>Ingrese el monto presupuestal.</p>
-
-        <div class="mono">
-          <input type="number" id="P7Presupuesto">
-          <button id="btnPunto7">Ejecutar Punto 7</button>
-        </div>
-
-        <div id="punto7resultado">
-          <p class="resultado" id="resultado_7"></p>
-        </div>
-
-      </div>
-
-
-
-    </section>
-  </main>
-  <div style="height: 200vh;"></div>
-
-
-  <script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 
 </html>

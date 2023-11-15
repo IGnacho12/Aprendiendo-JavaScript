@@ -1,5 +1,21 @@
-// Punto 1
+// Mostrar mas consignas
 
+const BTN_MOSTRAR_CONSIGNAS = document.getElementById("btnMostrarConsignas");
+const LISTA_DE_CONSIGNAS = document.getElementById("listaDeConsignas");
+
+BTN_MOSTRAR_CONSIGNAS.addEventListener("click", () => {
+  if (LISTA_DE_CONSIGNAS.classList.contains("show")) {
+    LISTA_DE_CONSIGNAS.classList.remove("show")
+    LISTA_DE_CONSIGNAS.classList.add("hidden")
+    BTN_MOSTRAR_CONSIGNAS.innerHTML = "Mostrar lista de consignas"
+  } else {
+    BTN_MOSTRAR_CONSIGNAS.innerHTML = "Ocultar lista de consignas"
+    LISTA_DE_CONSIGNAS.classList.remove("hidden")
+    LISTA_DE_CONSIGNAS.classList.add("show")
+  }
+});
+
+// Punto 1
 const BTN_PUNTO_1 = document.getElementById("btnPunto1");
 const RESULTADO_1 = document.getElementById("resultado_1");
 
@@ -145,7 +161,9 @@ BTN_PUNTO_6.addEventListener("click", () => {
   let NumeroDePulsaciones = parseInt((220 - EDAD) / 10);
 
   RESULTADO_6.innerHTML =
-    "Su número de pulsaciones es de: " + NumeroDePulsaciones;
+    "Su número de pulsaciones es de: <strong>" +
+    NumeroDePulsaciones +
+    "</strong>";
 });
 
 // Punto 7
@@ -155,7 +173,7 @@ const RESULTADO_7 = document.getElementById("resultado_7");
 BTN_PUNTO_7.addEventListener("click", () => {
   const PRESUPUESTO = parseInt(document.getElementById("P7Presupuesto").value);
 
-  let cardiologia = traumatologia = pediatria = 0;
+  let cardiologia = (traumatologia = pediatria = 0);
 
   cardiologia = PRESUPUESTO * 0.4;
   traumatologia = PRESUPUESTO * 0.3;
@@ -168,5 +186,33 @@ BTN_PUNTO_7.addEventListener("click", () => {
     traumatologia +
     "</strong> <br> El presupuesto para pediatría es: <strong>" +
     pediatria +
+    "</strong>";
+});
+
+const BTN_PUNTO_8 = document.getElementById("btnPunto8");
+const RESULTADO_8 = document.getElementById("resultado_8");
+
+let num1 = 0;
+let num2 = 0;
+let num3 = 0;
+
+BTN_PUNTO_8.addEventListener("click", () => {
+  num1 = parseInt(document.getElementById("P8num1").value);
+  num2 = parseInt(document.getElementById("P8num2").value);
+
+  num3 = num1;
+
+  num1 = num2;
+  num2 = num3;
+
+  RESULTADO_8.innerHTML =
+    "El valor de la variable 1 es: " +
+    "<strong>" +
+    num1 +
+    "</strong>" +
+    "<br>" +
+    "El valor de la variable 2 es: " +
+    "<strong>" +
+    num2 +
     "</strong>";
 });
