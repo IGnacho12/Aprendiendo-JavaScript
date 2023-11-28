@@ -4,4 +4,4 @@ El objetivo de este miniproyecto es poder lograr transformas todos los puntos da
 
 #### link de la pagina
 
-https://aprendiendo-java-script.vercel.app/ Tabla:
+https://aprendiendo-java-script.vercel.app/
